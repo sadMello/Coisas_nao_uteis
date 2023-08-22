@@ -24,6 +24,15 @@ void sorteio(int n){
     }
 }
 
+void pao_queijo(){
+    printf("\nPrimeiramente ce vai precisar de:\n");
+    printf("2 copos de leite\n1 copo de agua\n1/3 copo de oleo\n500g de polvilho doce\n3 ovos inteiros\n1 colher de sopa de sal\nQueijo ralado a gosto (muito, sem medo)\n");
+    printf("\nAgora vamos preparar:\n");
+    printf("1-Ferva o leite com a água e o óleo.\n2-Em uma vasilha misture o polvilho e o sal.\n3-Jogue o liquido fervido e misture com uma colher grande.");
+    printf("4-Espere esfriar e despeje o queijo ralado e os ovos.\n5-Misture a massa com a mão amassando bem até virar uma cola caseira dura.\n");
+    printf("6-Faça bolinhas do tamanho que preferir.\n7-Asse em forno bem quente até dourar.\n8-Sirva quentinho.\n");
+}
+
 int main(){
     int escolha, n, i=1;
     
@@ -34,6 +43,7 @@ int main(){
         printf("MENU - coisas nao uteis:\n------------------------------------------------------------\n");
         printf("\n1 - Todos os numeros impares ate N");
         printf("\n2 - Mini loteria");
+        printf("\n3 - Uma receitinha facil de fazer e gostosa");
         printf("\n0 - sair (tenho alto util a fazer)\n");
         scanf("%d",&escolha);
         if(escolha==0){
@@ -57,6 +67,11 @@ int main(){
             printf("\n");
             system("pause");
         }
-        
+        if(escolha==3){
+            system("cls");
+            printf("------------------------------\nReceita de pao de queijo tao bom que parece mentira - atualizada\n------------------------------\n");
+            pao_queijo();
+            system("pause");
+        }
     }
 }
